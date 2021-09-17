@@ -1,0 +1,13 @@
+body {
+    background-color: lightsteelblue;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.cell {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 0px;
+}
