@@ -1,13 +1,33 @@
+:root {
+    --grid-columns: 1;
+    --grid-rows: 1;
+    --cell-color: white;
+}
 body {
     background-color: lightsteelblue;
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    position: absolute;
+    font-size: 45px;
+    margin: 10px 0 0 30px;
 }
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    margin: auto;
+    grid-template-columns: repeat(var(--grid-columns), 1fr); 
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    height: 96vh;
+    width: 96vh;
+    margin-top: 2vh;
+    border: 2px solid black;
 }
 .cell {
-    border-color: black;
+    border-color: lightgrey;
     border-width: 1px;
     border-style: solid;
+    background-color: var(--cell-color);
     margin: 0px;
+    padding: 0px;
 }
