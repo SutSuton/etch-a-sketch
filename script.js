@@ -1,7 +1,7 @@
 const container = document.querySelector(".grid-container");
+const cell = container.childNodes;
 
-let n = 10;
-
+let n = 8; //for now, will add a user interface to this later
 makeGrid(n);
 
 function makeGrid(rows) {
@@ -18,13 +18,8 @@ function makeGrid(rows) {
 container.style.setProperty('--grid-columns', n);
 container.style.setProperty('--grid-rows', n);
 
-//function changeColor() {
-//    cell.style.setProperty('--cell-color', 'blue');
-//}
-
-const cell = document.querySelector(".cell");
-
-cell.addEventListener('mouseover', e => {
-    cell.style.setProperty('--cell-color', 'blue');
-    console.log('hey');
-});
+cell.forEach(item => {
+    item.addEventListener('mouseover', e => {
+      item.className = "colored";
+    })
+  })

@@ -1,17 +1,43 @@
 :root {
     --grid-columns: 1;
     --grid-rows: 1;
-    --cell-color: white;
+    --cell-color: black;
 }
 body {
     background-color: lightsteelblue;
     margin: 0px;
     padding: 0px;
 }
-h1 {
+.left-side {
     position: absolute;
+    margin: 10px;
+}
+h1 {
     font-size: 45px;
-    margin: 10px 0 0 30px;
+}
+#user-input {
+    font-size: 20px;
+}
+#rows {
+    width: 60px;
+    height: 30px;
+}
+#print {
+    height: 35px;
+    background-color: white;
+    border-style: 1px solid black;
+    border-radius: 40px;
+}
+#reset {
+    font-size: 36px;
+    background-color: rgb(255, 137, 129);
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+
 }
 .grid-container {
     display: grid;
@@ -27,7 +53,11 @@ h1 {
     border-color: lightgrey;
     border-width: 1px;
     border-style: solid;
-    background-color: var(--cell-color);
     margin: 0px;
     padding: 0px;
+    background-color: white;
+}
+.colored {
+    background-color: var(--cell-color);
+    border-style: none;
 }
