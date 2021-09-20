@@ -11,15 +11,13 @@
 <body>
     <div class=left-side>
         <h1>Etch-a-Sketch</h1>
-        <form id="user-input">
-            <label for="rows">Enter grid size</label>
-            <br>
-            <input type="number" id="rows" name="rows">
-            <button id="print" type="submit">Make grid</button>   
-        </form>
-        <button id="reset">RESET</button>
+        <input type="text" placeholder="16" id="rows">
+        <button id="print" type="button" onclick="getInputValue();">Make Grid</button>
+        <br>
+        <button id="reset" onclick="reset();">RESET</button>
     </div>
     <div class="grid-container"></div>
-    
+    <div class="right-side">
+    </div>
 </body>
 </html>
